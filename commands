@@ -1,2 +1,3 @@
+zip docker_build.zip buildspec.yml Dockerfile run.sh
 aws s3 cp docker_build.zip s3://my.bucket/docker_build/xyz.zip
 aws codebuild --region us-west-1 start-build --project-name project-docker-build
